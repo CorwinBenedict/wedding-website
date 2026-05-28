@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RSVP | Alexis & Chase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="rsvp">
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="index.html">Alexis & Chase</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="rsvp.html" class="active">RSVP</a>
+        <a href="registry.html">Registry</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="wrap narrow">
+      <p class="eyebrow">Please reply by August 01, 2027</p>
+      <h1 class="page-title">RSVP</h1>
+      <p class="page-intro">Please submit your RSVP by the deadline.</p>
+
+      <div id="apiNotice" class="notice hidden"></div>
+      <div id="rsvpSuccess" class="success hidden">Thanks! Your RSVP was submitted.</div>
+
+      <form id="rsvpForm" class="card form-card" method="post" target="hiddenSubmitFrame">
+        <input type="hidden" name="action" value="rsvp" />
+        <input type="hidden" name="honeypot" value="" />
+        <div class="form-grid">
+          <label>
+            Full name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Attending?
+            <select name="attending" required>
+              <option value="">Select one</option>
+              <option value="Yes">Accept</option>
+              <option value="No">Decline</option>
+            </select>
+          </label>
+          <label>
+            Number attending in your party?
+            <input type="number" min="1" max="8" name="guest_count" value="1" />
+          </label>
+          <label>
+            Will you be joining us for the meal?
+            <select name="meal_choice">
+              <option value="">Select one</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </label>
+          <label>
+            Song request?
+            <input type="text" name="song_request" />
+          </label>
+
+          <label class="full">
+            Names of everyone in your party who will be attending
+            <textarea
+              name="attendee_names"
+              rows="3"
+              placeholder="Example: Jon Smith, Joe Smith, Jane Smith"
+            ></textarea>
+          </label>
+
+          <label class="full">
+            Anything else we should know?
+            <textarea name="notes" rows="4" placeholder="Dietary restrictions or anything else"></textarea>
+          </label>
+        </div>
+        <button type="submit" class="button">Send RSVP</button>
+      </form>
+
+      <p class="small muted"></p>
+    </div>
+  </main>
+
+  <iframe name="hiddenSubmitFrame" id="hiddenSubmitFrame" class="hidden-iframe"></iframe>
+
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <p>Alexis & Chase · September 04, 2027</p>
+      <p><a href="index.html">Back home</a></p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registry | Alexis & Chase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="registry">
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="index.html">Alexis & Chase</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="rsvp.html">RSVP</a>
+        <a href="registry.html" class="active">Registry</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="wrap">
+      <div class="narrow centered">
+        <p class="eyebrow">Registry</p>
+        <h1 class="page-title">Our Wedding Registry</h1>
+        <p class="page-intro">Please be sure to mark down the item purchased.</p>
+      </div>
+
+      <div id="registryNotice" class="notice hidden"></div>
+      <div id="registryFilters" class="registry-filters hidden"></div>
+      <div id="registryList" class="registry-grid"></div>
+    </div>
+  </main>
+
+  <iframe name="hiddenRegistryFrame" id="hiddenRegistryFrame" class="hidden-iframe"></iframe>
+
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <p>Alexis & Chase · September 04, 2027</p>
+      <p><a href="faq.html">Questions?</a></p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
