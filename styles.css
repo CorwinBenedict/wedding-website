@@ -1,15 +1,15 @@
 :root {
-  --bg: #edf3ec;
-  --paper: #fbfdf9;
-  --text: #243126;
-  --muted: #5f7261;
-  --accent: #3f6a49;
-  --accent-strong: #2f5238;
-  --accent-soft: #d8e6d6;
-  --line: #d6e3d3;
-  --success: #e4f2e2;
-  --notice: #eef2dd;
-  --shadow: 0 14px 34px rgba(33, 56, 38, 0.08);
+  --bg: #F8F3EC;
+  --paper: #FFFDF9;
+  --text: #3A2418;
+  --muted: #3E5A43;
+  --accent: #B65A2A;
+  --accent-strong: #6B1F2A;
+  --accent-soft: #EFE0D2;
+  --line: #E7D8C7;
+  --success: #EEF2EC;
+  --notice: #F6E7C4;
+  --shadow: 0 14px 34px rgba(58, 36, 24, 0.10);
 }
 
 * { box-sizing: border-box; }
@@ -87,7 +87,7 @@ h3 { font-size: 1.6rem; }
   background:
     linear-gradient(rgba(30, 50, 32, 0.28), rgba(30, 50, 32, 0.24)),
     radial-gradient(circle at top left, rgba(255,255,255,0.22), transparent 38%),
-    linear-gradient(135deg, #6f8f74, #cadac9 58%, #a8c0ab);
+    linear-gradient(135deg, #6B1F2A 0%, #B65A2A 40%, #D4A017 100%);
 }
 .hero-overlay {
   position: absolute;
