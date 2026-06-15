@@ -228,7 +228,7 @@
               <h3>${escapeHtml(item.item_name || "Gift item")}</h3>
               ${description}
             </div>
-            <div class="price-tag">${escapeHtml(item.price || "")}</div>
+            <div class="price-tag">$${escapeHtml(item.price || "")}</div>
           </div>
           <div class="registry-meta">${store}${category}</div>
           ${statusMarkup(item)}
