@@ -216,6 +216,11 @@
       const description = item.description ? `<p>${escapeHtml(item.description)}</p>` : "";
       const store = item.store ? `<span class="pill">${escapeHtml(item.store)}</span>` : "";
       const category = item.category ? `<span class="pill">${escapeHtml(item.category)}</span>` : "";
+      const image = item.image_url
+        ? `<img class="registry-image"
+            src="${escapeAttr(item.image_url)}"
+            alt="${escapeAttr(item.item_name || "Registry item")}".`
+        : "";
       const link = normalizeUrl(item.url)
         ? `<a href="${escapeAttr(item.url)}" target="_blank" rel="noopener">View item</a>`
         : "";
@@ -223,6 +228,7 @@
 
       return `
         <article class="card registry-item ${fullyPurchased ? "is-purchased" : ""}">
+          ${image}
           <div class="registry-top">
             <div>
               <h3>${escapeHtml(item.item_name || "Gift item")}</h3>
