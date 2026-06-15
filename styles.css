@@ -2,14 +2,14 @@
   --bg: #F8F3EC;
   --paper: #FFFDF9;
   --text: #3A2418;
-  --muted: #3E5A43;
+  --muted: #4B6B50;
   --accent: #B65A2A;
   --accent-strong: #D32F2F;
   --accent-soft: #EFE0D2;
   --line: #E7D8C7;
   --success: #EEF2EC;
   --notice: #F6E7C4;
-  --shadow: 0 14px 34px rgba(58, 36, 24, 0.10);
+  --shadow: 0 20px 45px rgba(58, 36, 24, 0.12);
 }
 
 * { box-sizing: border-box; }
@@ -213,6 +213,7 @@ h3 { font-size: 1.6rem; }
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 24px;
+  overflow: hidden;
   box-shadow: var(--shadow);
   padding: 1.3rem;
 }
@@ -347,8 +348,10 @@ input:focus, select:focus, textarea:focus {
 }
 .price-tag {
   white-space: nowrap;
-  color: var(--muted);
+  color: #B65A2A;
+  font-size: 1.35rem;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 .registry-meta {
   display: flex;
@@ -359,8 +362,8 @@ input:focus, select:focus, textarea:focus {
   border-radius: 999px;
   font-size: 0.74rem;
   padding: 0.28rem 0.55rem;
-  background: #F3E6D8;
-  color: var(--muted);
+  background: #F7ECD0;
+  color: #6A4A10;
 }
 .registry-status-row {
   display: flex;
@@ -415,6 +418,15 @@ input:focus, select:focus, textarea:focus {
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background: #D4A017;
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 900px) {
