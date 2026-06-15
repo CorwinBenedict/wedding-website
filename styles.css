@@ -389,7 +389,7 @@ input:focus, select:focus, textarea:focus {
 .registry-actions {
   margin-top: auto;
   display: grid;
-  gap: 0.7rem;
+  gap: 1.2rem;
 }
 .registry-item.is-purchased {
   opacity: 0.68;
@@ -401,7 +401,7 @@ input:focus, select:focus, textarea:focus {
 .inline-fields {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.7rem;
+  gap: 1rem;
 }
 .small {
   font-size: 0.9rem;
