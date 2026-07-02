@@ -16,12 +16,12 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  background:
-  linear-gradient(rgba(58,36,24,.45), rgba(58,36,24,.35)),
-  url("images/engage.jpg");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+    radial-gradient(circle at top left, rgba(255,255,255,0.8), transparent 30%),
+    linear-gradient(180deg, #FDF8F2, #FAF2E8 35%, #F8F3EC);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
 img { max-width: 100%; }
 a { color: var(--accent); }
 h1, h2, h3 {
@@ -84,10 +84,11 @@ h3 { font-size: 1.6rem; }
   display: grid;
   align-items: center;
   background:
-    linear-gradient(rgba(58, 36, 24, 0.20), rgba(58, 36, 24, 0.18)),
-    radial-gradient(circle at top left, rgba(255,255,255,0.22), transparent 38%),
-    linear-gradient(135deg, #D32F2F 0%, #B65A2A 45%, #D4A017 100%);
-}
+  linear-gradient(rgba(58,36,24,.45), rgba(58,36,24,.35)),
+  url("images/engagement/hero.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 .hero-overlay {
   position: absolute;
   inset: 0;
