@@ -85,7 +85,7 @@ h3 { font-size: 1.6rem; }
   display: grid;
   align-items: center;
   background:
-  linear-gradient(rgba(58,36,24,.45), rgba(58,36,24,.35)),
+  linear-gradient(rgba(40,20,15,.55), rgba(40,20,15,.40)),
   url("images/engagement/hero.jpg");
 background-size: cover;
 background-position: center;
@@ -99,26 +99,33 @@ background-repeat: no-repeat;
 .hero-inner {
   position: relative;
   z-index: 1;
-  padding: 5rem 0 6rem;
   text-align: center;
+
+  padding-top: 2rem;
+  padding-bottom: 12rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .eyebrow, .mini-label {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-size: 0.78rem;
-  color: var(--muted);
+  color: rgba(255,255,255,0.92);
   margin-bottom: 0.8rem;
 }
 .hero-date, .hero-copy {
   font-size: 1.1rem;
   max-width: 680px;
   margin: 0.8rem auto 0;
+  color: rgba(255,255,255,0.92);
 }
 .hero-actions {
   display: flex;
   gap: 0.8rem;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1.2rem;
   flex-wrap: wrap;
 }
 
