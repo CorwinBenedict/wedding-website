@@ -16,6 +16,7 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
+  background:
     radial-gradient(circle at top left, rgba(255,255,255,0.8), transparent 30%),
     linear-gradient(180deg, #FDF8F2, #FAF2E8 35%, #F8F3EC);
   color: var(--text);
@@ -85,10 +86,11 @@ h3 { font-size: 1.6rem; }
   align-items: center;
   background:
   linear-gradient(rgba(58,36,24,.45), rgba(58,36,24,.35)),
-  url("images/registry/engage.jpg");
+  url("images/engagement/hero.jpg");
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
+}
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -133,13 +135,13 @@ background-repeat: no-repeat;
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
-  box-shadow: 0 10px 22px rgba(58, 36, 24, 0.16);
+  box-shadow: 0 10px 22px rgba(58, 36, 24 0.16);
 }
 .button:hover { transform: translateY(-1px); opacity: 0.97; }
 .button-secondary {
   background: rgba(255,255,255,0.78);
   color: var(--text);
-  border: 1px solid rgba(58, 36, 24, 0.15);
+  border: 1px solid rgba(58, 36, 24 0.15);
   box-shadow: none;
 }
 .countdown-section { padding: 1.4rem 0 0; }
@@ -261,7 +263,7 @@ input, select, textarea {
   color: var(--text);
 }
 input:focus, select:focus, textarea:focus {
-  outline: 2px solid rgba(58, 36, 24, 0.18);
+  outline: 2px solid rgba(58, 36, 24 0.18);
   border-color: var(--accent);
 }
 
@@ -411,7 +413,7 @@ input:focus, select:focus, textarea:focus {
 }
 .site-footer {
   padding: 2rem 0 2.5rem;
-  border-top: 1px solid rgba(58, 36, 24, 0.12);
+  border-top: 1px solid rgba(58, 36, 24 0.12);
 }
 .footer-wrap {
   display: flex;
