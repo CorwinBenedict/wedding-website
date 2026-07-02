@@ -16,7 +16,6 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  background:
     radial-gradient(circle at top left, rgba(255,255,255,0.8), transparent 30%),
     linear-gradient(180deg, #FDF8F2, #FAF2E8 35%, #F8F3EC);
   color: var(--text);
@@ -90,7 +89,6 @@ h3 { font-size: 1.6rem; }
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-}
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -176,7 +174,7 @@ background-repeat: no-repeat;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.02em;
-  color: var(--text);
+  color: var(--ink);
 }
 .cd-unit em {
   font-style: normal;
